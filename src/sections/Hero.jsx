@@ -122,10 +122,10 @@ export const Hero = () =>
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow Me: </span>
               {[
-                { icon: FaGithub, href: "https://github.com/ranfuro-dev" },
-                { icon: FaLinkedin, href: "https:www.linkedin.com/in/dan-froilan-hubilla" },
+                { icon: FaGithub, href: "https://github.com/ranfuro-dev", label: "GitHub" },
+                { icon: FaLinkedin, href: "https://www.linkedin.com/in/dan-froilan-hubilla", label: "LinkedIn" },
               ].map((social, idx) => (
-                <a key={idx} href={social.href}
+                <a key={idx} href={social.href} target="_blank" rel="noreferrer" aria-label={social.label}
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
                   {<social.icon className="w-5 h-5" />}
                 </a>
