@@ -112,7 +112,7 @@ export const Hero = () =>
                 Contact Me 
                   <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton href="/Dan-Froilan-Hubilla-Resume.pdf" download>
                 <Download className="w-5 h-5"/>
                  Download CV
               </AnimatedBorderButton>

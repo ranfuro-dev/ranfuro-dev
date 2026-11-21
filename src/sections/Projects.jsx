@@ -8,7 +8,7 @@ const projects = [
         description: "A personal portfolio showcasing my projects, technical skills, and journey as a Computer Engineering graduate.",
         image: "/images/portfolio.jpg",
         tags: ["JavaScript", "React", "Vite", "Talwind CSS"],
-        link: "",
+        link: "https://ranfuro-dev.vercel.app",
         github: "https://github.com/ranfuro-dev/ranfuro-dev",
     },
     {
