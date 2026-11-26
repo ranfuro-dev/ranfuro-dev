@@ -188,7 +188,7 @@ export const Contact = () =>
               <div className="glass p-6 rounded-2xl border border-primary/20">
                 <div className="flex items-center gap-2 text-sm font-medium text-foreground">
                   <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse" />
-                  Currently Available
+                  Open to Work
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   I’m open to entry-level opportunities and exciting projects in software and web development also AI Automation. If you’re looking for a motivated computer engineering graduate, let’s talk!
