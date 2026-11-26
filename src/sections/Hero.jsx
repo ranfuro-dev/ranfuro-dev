@@ -50,8 +50,9 @@ export const Hero = () =>
     <section className="relative min-h-screen items-center overflow-hidden">
       {/* Bg */}
       <div className="absolute inset-0">
-        <img src="images/hero-bg.jpg" 
+        <img src="/images/hero-bg.jpg"
         alt="Hero image" 
+        fetchPriority="high"
         className="w-full h-full object-cover opacity-40"/>
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"> 
         </div>
@@ -139,7 +140,8 @@ export const Hero = () =>
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30
                               via-transparent-to-primary/10 blur-2xl animate-pulse" />
               <div className="relative glass rounded-3x; p-2 glow-border">
-                <img src="/images/profile-photo.jpg" alt="Dan Froilan Hubilla" 
+                <img src="/images/profile-photo.jpg" alt="Dan Froilan Hubilla"
+                fetchPriority="high"
                 className="w-full aspect-[4/5] object-cover rounded-2xl"/>
 
                 {/*Floating Badge*/}

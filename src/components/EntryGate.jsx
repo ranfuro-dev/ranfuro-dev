@@ -161,6 +161,11 @@ export const EntryGate = ({ onEnter }) => {
     setShowHint(false);
   };
 
+  const skipEntry = () => {
+    setIsExiting(true);
+    window.setTimeout(onEnter, 700);
+  };
+
   return (
     <div className={`fixed inset-0 z-[100] overflow-hidden bg-black/70 backdrop-blur-3xl ${isExiting ? "animate-fade-out" : ""}`}>
       <div aria-hidden="true" className="absolute inset-0 animate-background-pulse">
@@ -214,6 +219,14 @@ export const EntryGate = ({ onEnter }) => {
           Clear
         </button>
       )}
+      <button
+        type="button"
+        onClick={skipEntry}
+        aria-label="Skip the drawing intro and enter the portfolio"
+        className="absolute bottom-6 left-6 z-10 rounded-full px-4 py-2 text-sm text-white/65 underline-offset-4 transition hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:bottom-10 sm:left-10"
+      >
+        Skip intro
+      </button>
     </div>
   );
 };
